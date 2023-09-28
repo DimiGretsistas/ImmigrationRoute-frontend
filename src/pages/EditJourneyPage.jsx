@@ -35,6 +35,14 @@ function EditJourneyPage(props) {
             });
     };
 
+    const deleteJourney = () => {
+        axios
+            .delete(`${API_URL}/api/journeys/${journeyId}`)
+            .then(() => {
+                navigate("/journeys");
+            })
+            .catch((err) => console.log(err));
+    };
     return (
         <div className="EditJourneyPage">
             <h3>Edit your Journey</h3>
@@ -55,8 +63,11 @@ function EditJourneyPage(props) {
                     onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit Update" />
             </form>
+
+            <button onClick={deleteJourney}>Delete Journey</button>
+
         </div>
     );
 }
