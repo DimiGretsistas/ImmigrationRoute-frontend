@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import { useContext } from "react";                     
-import { AuthContext } from "../context/auth.context";  
+import { useContext } from "react";
+import { AuthContext } from "../context/auth.context";
 
- 
+
 
 function Navbar() {
-  const { isLoggedIn, user } = useContext(AuthContext);  
+  const {
+    isLoggedIn,
+    user,
+    logOutUser
+  } = useContext(AuthContext);
 
   return (
     <nav>
@@ -18,11 +22,13 @@ function Navbar() {
         <>
           <Link to="/journeys">
             <button>Journeys</button>
-          </Link>        
-          <button>Logout</button>
+          </Link>
+
+          <button onClick={logOutUser}>Logout</button>
+          <span>{user && user.name}</span>
         </>
       )}
- 
+
       {!isLoggedIn && (
         <>
           <Link to="/signup"> <button>Sign Up</button> </Link>
@@ -32,5 +38,5 @@ function Navbar() {
     </nav>
   );
 }
- 
+
 export default Navbar;

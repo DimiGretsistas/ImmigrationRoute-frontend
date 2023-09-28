@@ -7,6 +7,7 @@ import JourneyListPage from "./pages/JourneyListPage";
 import JourneyDetailsPage from "./pages/JourneyDetailsPage";
 import EditJourneyPage from "./pages/EditJourneyPage";
 import SignupPage from "./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/journeys/:journeyId" element={<JourneyDetailsPage />} />
         <Route path="/journeys/edit/:journeyId" element={<EditJourneyPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
   );
