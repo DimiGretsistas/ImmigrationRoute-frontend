@@ -1,16 +1,12 @@
-
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
-import AddJourney from "../components/AddJourney";
-import react from 'react';
-
 
 const API_URL = "http://localhost:5005";
 
-
 function JourneyDetailsPage(props) {
-    const [journey, setJourneys] = useState(null);
+    const [journey, setJourney] = useState(null);
+
     const { journeyId } = useParams();
 
     const getJourney = () => {
@@ -18,11 +14,10 @@ function JourneyDetailsPage(props) {
             .get(`${API_URL}/api/journeys/${journeyId}`)
             .then((response) => {
                 const oneJourney = response.data;
-                setJourneys(oneJourney);
+                setJourney(oneJourney);
             })
             .catch((error) => console.log(error));
     };
-
 
     useEffect(() => {
         getJourney();
@@ -30,30 +25,35 @@ function JourneyDetailsPage(props) {
 
     return (
         <div className="JourneyDetails">
-            {journey && (
+            {journey ? (
                 <>
                     <h1>{journey.title}</h1>
                     <p>{journey.description}</p>
                 </>
+            ) : (
+                <p>Loading...</p>
             )}
 
-            { journey &&
-                journey.task.map((task) => (
+            {journey && journey.tasks ? (
+                journey.tasks.map((task) => (
                     <li className="TaskCard card" key={task._id}>
                         <h3>{task.title}</h3>
                         <h4>Description:</h4>
                         <p>{task.description}</p>
                     </li>
-                ))}
+                ))
+            ) : (
+                <p>No tasks available.</p>
+            )}
 
-            <Link to='/journeys'>
+            <Link to="/journeys">
                 <button>Back to journeys</button>
             </Link>
 
             <Link to={`/journeys/edit/${journeyId}`}>
                 <button>Edit Journey</button>
             </Link>
-        </div >
+        </div>
     );
 }
 
