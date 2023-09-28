@@ -8,6 +8,8 @@ import JourneyDetailsPage from "./pages/JourneyDetailsPage";
 import EditJourneyPage from "./pages/EditJourneyPage";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
+import IsAnon from "./components/IsAnon";
+import IsPrivate from "./components/isPrivate";
 
 
 function App() {
@@ -16,14 +18,27 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/journeys' element={<JourneyListPage />} />
-        <Route path="/journeys/:journeyId" element={<JourneyDetailsPage />} />
-        <Route path="/journeys/edit/:journeyId" element={<EditJourneyPage />} />
-        <Route path="/signup" element={<SignupPage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/journeys"
+          element={<IsPrivate> <JourneyListPage /> </IsPrivate>}
+        />
+
+        <Route
+          path="/journeys/:journeyId"
+          element={<IsPrivate> <JourneyDetailsPage /> </IsPrivate>}
+        />
+
+        <Route
+          path="/journeys/edit/:journeyId"
+          element={<IsPrivate> <EditJourneyPage /> </IsPrivate>}
+        />
+
+        <Route path="/signup" element={<IsAnon> <SignupPage /> </IsAnon>} />
+        <Route path="/login" element={<IsAnon> <LoginPage /> </IsAnon>} />
+
       </Routes>
     </div>
   );
 }
+
 export default App;

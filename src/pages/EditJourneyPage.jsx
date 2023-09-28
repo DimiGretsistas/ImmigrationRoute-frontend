@@ -12,8 +12,12 @@ function EditJourneyPage(props) {
     const navigate = useNavigate();
 
     useEffect(() => {
+        const storedToken = localStorage.getItem('authToken');
+
         axios
-            .get(`${API_URL}/api/journeys/${journeyId}`)
+            .get(`${API_URL}/api/journeys/${journeyId}`,
+                { headers: { Authorization: `Bearer ${storedToken}` } }
+            )
             .then((response) => {
                 const oneJourney = response.data;
                 setTitle(oneJourney.title);
@@ -28,16 +32,25 @@ function EditJourneyPage(props) {
         e.preventDefault();
         const requestBody = { title, description };
 
+        const storedToken = localStorage.getItem('authToken');
+
+
         axios
-            .put(`${API_URL}/api/journeys/${journeyId}`, requestBody)
+            .put(`${API_URL}/api/journeys/${journeyId}`, requestBody,
+                { headers: { Authorization: `Bearer ${storedToken}` } }
+            )
             .then((response) => {
                 navigate(`/journeys/${journeyId}`)
             });
     };
 
     const deleteJourney = () => {
+
+        const storedToken = localStorage.getItem('authToken');
+
         axios
-            .delete(`${API_URL}/api/journeys/${journeyId}`)
+            .delete(`${API_URL}/api/journeys/${journeyId}`,
+                { headers: { Authorization: `Bearer ${storedToken}` } })
             .then(() => {
                 navigate("/journeys");
             })

@@ -13,8 +13,13 @@ function JourneyDetailsPage(props) {
     const { journeyId } = useParams();
 
     const getJourney = () => {
+        const storedToken = localStorage.getItem("authToken");
+
         axios
-            .get(`${API_URL}/api/journeys/${journeyId}`)
+            .get(
+                `${API_URL}/api/journeys/${journeyId}`,
+                { headers: { Authorization: `Bearer ${storedToken}` } }
+            )
             .then((response) => {
                 const oneJourney = response.data;
                 setJourney(oneJourney);

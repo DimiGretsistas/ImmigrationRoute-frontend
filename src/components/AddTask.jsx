@@ -1,5 +1,3 @@
-// src/components/AddTask.jsx
-
 import { useState } from "react";
 import axios from "axios";
 
@@ -17,10 +15,14 @@ function AddTask(props) {
         const { journeyId } = props;
         const requestBody = { title, description, journeyId };
 
+        const storedToken = localStorage.getItem('authToken');
+
+
         axios
-            .post(`${API_URL}/api/tasks`, requestBody)
+            .post(`${API_URL}/api/tasks`, requestBody,
+                { headers: { Authorization: `Bearer ${storedToken}` } }
+            )
             .then((response) => {
-                // Reset the state to clear the inputs
                 setTitle("");
                 setDescription("");
                 props.refreshJourney();

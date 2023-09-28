@@ -11,12 +11,14 @@ function JourneyListPage() {
     const [journeys, setJourneys] = useState([]);
 
     const getAllJourneys = () => {
+        const storedToken = localStorage.getItem("authToken");
+
         axios
-            .get(`${API_URL}/api/journeys`)
-            .then((response) => {
-                console.log(response)
-                setJourneys(response.data)
-            })
+            .get(
+                `${API_URL}/api/journeys`,
+                { headers: { Authorization: `Bearer ${storedToken}` } }
+            )
+            .then((response) => setJourneys(response.data))
             .catch((error) => console.log(error));
     };
 

@@ -40,16 +40,13 @@ function AuthProviderWrapper(props) {
     }
   }
 
-  const removeToken = () => {                    // <== ADD
-    // Upon logout, remove the token from the localStorage
+  const removeToken = () => {                   
     localStorage.removeItem("authToken");
   }
 
 
-  const logOutUser = () => {                   // <== ADD    
-    // To log out the user, remove the token
+  const logOutUser = () => {                   
     removeToken();
-    // and update the state variables    
     authenticateUser();
   }
   useEffect(() => {
