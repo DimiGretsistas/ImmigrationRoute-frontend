@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import JourneyListPage from "./pages/JourneyListPage";
 import JourneyDetailsPage from "./pages/JourneyDetailsPage";
 import EditJourneyPage from "./pages/EditJourneyPage";
+import SignupPage from "./pages/SignupPage";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/journeys' element={<JourneyListPage />} />
         <Route path="/journeys/:journeyId" element={<JourneyDetailsPage />} />
         <Route path="/journeys/edit/:journeyId" element={<EditJourneyPage />} />
+        <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </div>
   );
