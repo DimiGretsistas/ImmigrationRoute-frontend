@@ -23,7 +23,7 @@ function AddTask(props) {
                 // Reset the state to clear the inputs
                 setTitle("");
                 setDescription("");
-                props.refreshProject();
+                props.refreshJourney();
             })
             .catch((error) => console.log(error));
     };

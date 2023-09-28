@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import AddJourney from "../components/AddJourney";
 import AddTask from "../components/AddTask";
+import TaskCard from "../components/TaskCard";
 
 const API_URL = "http://localhost:5005";
 
@@ -38,17 +39,9 @@ function JourneyDetailsPage(props) {
 
             <AddTask refreshJourney={getJourney} journeyId={journeyId} />
 
-            {journey && journey.tasks ? (
-                journey.tasks.map((task) => (
-                    <li className="TaskCard card" key={task._id}>
-                        <h3>{task.title}</h3>
-                        <h4>Description:</h4>
-                        <p>{task.description}</p>
-                    </li>
-                ))
-            ) : (
-                <p>No tasks available.</p>
-            )}
+            {journey && journey.tasks.map((task) => (
+                <TaskCard key={task._id} {...task} />
+            ))}
 
             <Link to="/journeys">
                 <button>Back to journeys</button>
