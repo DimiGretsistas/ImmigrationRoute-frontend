@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import AddJourney from "../components/AddJourney";
+import AddTask from "../components/AddTask";
 
 const API_URL = "http://localhost:5005";
 
@@ -33,6 +35,8 @@ function JourneyDetailsPage(props) {
             ) : (
                 <p>Loading...</p>
             )}
+
+            <AddTask refreshJourney={getJourney} journeyId={journeyId} />
 
             {journey && journey.tasks ? (
                 journey.tasks.map((task) => (
