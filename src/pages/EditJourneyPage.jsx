@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate, useParams } from 'react-router-dom';
-
+import { useParams, useNavigate } from "react-router-dom";
 
 const API_URL = "http://localhost:5005";
 
@@ -10,6 +9,7 @@ function EditJourneyPage(props) {
     const [description, setDescription] = useState("");
 
     const { journeyId } = useParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios
@@ -20,7 +20,9 @@ function EditJourneyPage(props) {
                 setDescription(oneJourney.description);
             })
             .catch((error) => console.log(error));
+
     }, [journeyId]);
+
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
@@ -35,9 +37,9 @@ function EditJourneyPage(props) {
 
     return (
         <div className="EditJourneyPage">
-            <h3>Edit the Journey</h3>
+            <h3>Edit your Journey</h3>
 
-            <form form onSubmit={handleFormSubmit}>
+            <form onSubmit={handleFormSubmit}>
                 <label>Title:</label>
                 <input
                     type="text"
