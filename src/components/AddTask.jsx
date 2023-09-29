@@ -15,12 +15,9 @@ function AddTask(props) {
         const { journeyId } = props;
         const requestBody = { title, description, journeyId };
 
-        const storedToken = localStorage.getItem('authToken');
-
-
         axios
-            .post(`${API_URL}/api/tasks`, requestBody,
-                { headers: { Authorization: `Bearer ${storedToken}` } }
+            .post(`${API_URL}/task/tasks`, requestBody,
+
             )
             .then((response) => {
                 setTitle("");

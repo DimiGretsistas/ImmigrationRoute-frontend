@@ -14,7 +14,6 @@ function AuthProviderWrapper(props) {
   }
 
   const authenticateUser = () => {
-
     const storedToken = localStorage.getItem('authToken');
 
     if (storedToken) {
@@ -40,12 +39,12 @@ function AuthProviderWrapper(props) {
     }
   }
 
-  const removeToken = () => {                   
+  const removeToken = () => {
     localStorage.removeItem("authToken");
   }
 
 
-  const logOutUser = () => {                   
+  const logOutUser = () => {
     removeToken();
     authenticateUser();
   }

@@ -1,30 +1,31 @@
 import { useState } from "react";
 import axios from "axios";
 
+
 const API_URL = "http://localhost:5005";
 
 function AddJourney(props) {
-    const [journey, setJourneys] = useState("");
-    const [description, setDescription] = useState("");
     const [title, setTitle] = useState('');
+    const [description, setDescription] = useState("");
+
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const { journeyId } = props;
         const requestBody = { title, description };
+
         const storedToken = localStorage.getItem('authToken');
 
         axios
             .post(
-                `${API_URL}/api/journeys`,
-                requestBody,
+                `${API_URL}/journeys`, requestBody,
                 { headers: { Authorization: `Bearer ${storedToken}` } }
             )
             .then((response) => {
                 setTitle("");
                 setDescription("");
-
-                
                 props.refreshJourneys();
             })
             .catch((error) => console.log(error));

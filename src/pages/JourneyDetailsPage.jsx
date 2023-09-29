@@ -16,9 +16,10 @@ function JourneyDetailsPage(props) {
         const storedToken = localStorage.getItem("authToken");
 
         axios
-            .get(
-                `${API_URL}/api/journeys/${journeyId}`,
-                { headers: { Authorization: `Bearer ${storedToken}` } }
+            .get(`${API_URL}/journeys/${journeyId}`, {
+
+                headers: { Authorization: `Bearer ${storedToken}` }
+            }
             )
             .then((response) => {
                 const oneJourney = response.data;
@@ -28,7 +29,7 @@ function JourneyDetailsPage(props) {
     };
 
     useEffect(() => {
-        getJourney();
+        getJourney(journeyId);
     }, []);
 
     return (

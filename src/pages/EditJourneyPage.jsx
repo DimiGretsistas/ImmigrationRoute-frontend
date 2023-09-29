@@ -15,7 +15,7 @@ function EditJourneyPage(props) {
         const storedToken = localStorage.getItem('authToken');
 
         axios
-            .get(`${API_URL}/api/journeys/${journeyId}`,
+            .get(`${API_URL}/journeys/${journeyId}`,
                 { headers: { Authorization: `Bearer ${storedToken}` } }
             )
             .then((response) => {
@@ -36,7 +36,7 @@ function EditJourneyPage(props) {
 
 
         axios
-            .put(`${API_URL}/api/journeys/${journeyId}`, requestBody,
+            .put(`${API_URL}/journeys/${journeyId}`, requestBody,
                 { headers: { Authorization: `Bearer ${storedToken}` } }
             )
             .then((response) => {
@@ -49,7 +49,7 @@ function EditJourneyPage(props) {
         const storedToken = localStorage.getItem('authToken');
 
         axios
-            .delete(`${API_URL}/api/journeys/${journeyId}`,
+            .delete(`${API_URL}/journeys/${journeyId}`,
                 { headers: { Authorization: `Bearer ${storedToken}` } })
             .then(() => {
                 navigate("/journeys");

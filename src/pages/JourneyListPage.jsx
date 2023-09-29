@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import JourneyCard from "../components/JourneyCard";
+import AddTask from "../components/AddTask";
 
 const API_URL = "http://localhost:5005";
 
@@ -14,10 +15,11 @@ function JourneyListPage() {
         const storedToken = localStorage.getItem("authToken");
 
         axios
-            .get(
-                `${API_URL}/api/journeys`,
-                { headers: { Authorization: `Bearer ${storedToken}` } }
-            )
+            .get
+            (`${API_URL}/journeys`,
+                {
+                    headers: { Authorization: `Bearer ${storedToken}` },
+                })
             .then((response) => setJourneys(response.data))
             .catch((error) => console.log(error));
     };
