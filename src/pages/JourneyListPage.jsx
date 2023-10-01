@@ -31,7 +31,9 @@ function JourneyListPage() {
 
 
     return (
+
         <div className="JourneyListPage">
+            <h1>Welcome to your profile</h1>
             <AddJourney refreshJourneys={getAllJourneys} />
 
             {journeys.map((journey) => (
