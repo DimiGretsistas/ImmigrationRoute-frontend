@@ -10,7 +10,7 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import IsAnon from "./components/IsAnon";
 import IsPrivate from "./components/isPrivate";
-import ProfilePage from "./pages/Profilepage";
+import ProfilePage from "./pages/UserProfilePage";
 import ResultPage from "./pages/ResultPage";
 import PakistanOptionsPage from "./pages/Pakistan/PakistanOptionsPage";
 import IndiaOptionsPage from "./pages/India/IndiaOptionsPage";
@@ -76,11 +76,11 @@ function App() {
           element={<IsPrivate> <JourneyListPage /> </IsPrivate>}
         />
         <Route
-          path="/profile"
+          path="/user"
           element={<IsPrivate> <ProfilePage /> </IsPrivate>}
         />
         <Route
-          path="/profile/:userId"
+          path="/user/:userId"
           element={<IsPrivate> <ProfilePage /> </IsPrivate>}
         />
 

@@ -28,8 +28,8 @@ function Navbar() {
             <button>Journeys</button>
           </Link>
 
-          <Link to={`/profile/${userId}`}>
-            <button> Profile Page</button>
+          <Link to={`/user/${user._id}`}>
+            <button>Profile Page</button>
           </Link>
 
           <button onClick={logOutUser}>Logout</button>

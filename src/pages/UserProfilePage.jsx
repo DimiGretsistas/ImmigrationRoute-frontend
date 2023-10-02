@@ -4,7 +4,7 @@ import axios from "axios";
 import { AuthContext } from "../context/auth.context";
 const API_URL = "http://localhost:5005";
 
-function ProfilePage() {
+function UserProfilePage() {
     const { userId } = useParams();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -13,7 +13,7 @@ function ProfilePage() {
         const handleProfileFetch = () => {
             const storedToken = localStorage.getItem('authToken');
             axios
-                .get(`${API_URL}/profile/${userId}`, {
+                .get(`${API_URL}/user/${userId}`, {
 
                     headers: { Authorization: `Bearer ${storedToken}` }
                 })
@@ -53,5 +53,5 @@ function ProfilePage() {
     );
 }
 
-export default ProfilePage;
+export default UserProfilePage;
 
