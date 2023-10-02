@@ -1,9 +1,9 @@
-import AddJourney from "../components/AddJourney";
+import AddJourney from "../../components/AddJourney";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import JourneyCard from "../components/JourneyCard";
-import AddTask from "../components/AddTask";
+import JourneyCard from "../../components/JourneyCard";
+import AddTask from "../../components/AddTask";
 
 const API_URL = "http://localhost:5005";
 

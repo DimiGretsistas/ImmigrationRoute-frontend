@@ -1,16 +1,22 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Berlin from '../assets/berlin-3.jpg'
+
 function HomePage() {
-    return (
-        <div>
-      <h1 className="hello-title">Hello!</h1>
-      <p className="instruction">Please choose one of the following options:</p>
+
+  return (
+    <div>
+      <h1 className="hello-title">Welcome to ImmigrationRoute!</h1>
+      <h2 className='hello-subtitle'> Here you can find out the visa type you are eligible for in Germany, only with 4 clicks </h2>
+      <p> Once you have signed up and/or log in, you will be able to explore your visa eligibility find out the required documents for your type of visa</p>
+      <img className='berlin-germany' src={Berlin} />
       <div className="button-container">
-        <button className="option-button">Option 1</button>
-        <button className="option-button">Option 2</button>
-        <button className="option-button">Option 3</button>
-        <button className="option-button">Option 4</button>
+        <Link to='/currentPlace'>
+          <button className="option-button">Get Started!</button>
+        </Link>
       </div>
     </div>
-    );
+  );
 }
 
 export default HomePage;

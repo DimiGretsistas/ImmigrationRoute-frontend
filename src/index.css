@@ -158,3 +158,29 @@ nav li {
   display: flex;
   justify-content: center;
 }
+.berlin-germany {
+  width: 100%;
+  height: 500px;
+}
+.map {
+  width: 100vh;
+  height: 60vh;
+}
+.pak-study-visa{
+text-align: left;
+}
+.islamabad {
+  width: 500px;
+  height: auto;
+}
+.pak-jobseeker-visa {
+  text-align: left;
+}
+.new-delhi {
+  width: 500px;
+  height: auto;
+}
+.new-york {
+  width: 500px;
+  height: auto;
+}
