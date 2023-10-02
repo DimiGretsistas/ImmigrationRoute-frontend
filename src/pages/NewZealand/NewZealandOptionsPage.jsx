@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Christchurch from '../../assets/new-zealand.jpeg'
 
 function NewZealandOptionsPage() {
     const visaOptions = [
@@ -16,6 +17,8 @@ function NewZealandOptionsPage() {
                 Are you living in New Zealand and are planning to move to Germany for work, study or any other reason? Then choose
                 the the purpose of your future stay in Germany and explore your options for each purpose of stay.
             </p>
+            <img className='christchurch' src={Christchurch} />
+
             <div className="visa-buttons">
                 {visaOptions.map((option, index) => (
                     <Link key={index}

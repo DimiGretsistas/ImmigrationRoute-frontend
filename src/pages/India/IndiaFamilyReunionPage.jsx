@@ -1,9 +1,9 @@
 import React from "react";
 
-function FamilyReunionVisaChecklist() {
+function IndiaFamilyReunionVisaChecklist() {
   return (
     <div className="visa-results">
-      <h1>Family Reunion Visa Application Results</h1>
+      <h1> German Family Reunion Visa India</h1>
       <p>
         Before filling out the application form and booking an appointment, please prepare 2 identical sets of the following documentation for your visa:
       </p>
@@ -55,4 +55,4 @@ function FamilyReunionVisaChecklist() {
   );
 }
 
-export default FamilyReunionVisaChecklist;
+export default IndiaFamilyReunionVisaChecklist;

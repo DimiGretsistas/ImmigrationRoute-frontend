@@ -3,7 +3,7 @@ import React from 'react';
 function PakistanJobSeekerVisaPage() {
     return (
         <div className="pakistan-jobseeker-visa-documents">
-            <h1>German JobSeeker Visa Pakistan</h1>
+            <h1>German Job Seeker Visa Pakistan</h1>
             <h2>Please note that all copies of your documents have to be:</h2>
             <span>
                 <p>In DIN A4 size</p>

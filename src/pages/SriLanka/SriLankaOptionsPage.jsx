@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Colombo from '../../assets/colombo1.jpeg'
 
 function SriLankaOptionsPage() {
     const visaOptions = [
@@ -16,6 +17,8 @@ function SriLankaOptionsPage() {
                 Are you living in Sri Lanka  and are planning to move to Germany for work, study or any other reason? Then choose
                 the the purpose of your future stay in Germany and explore your options for each purpose of stay.
             </p>
+            <img className='colombo' src={Colombo} />
+
             <div className="visa-buttons">
                 {visaOptions.map((option, index) => (
                     <Link key={index}

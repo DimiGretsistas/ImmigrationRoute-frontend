@@ -166,14 +166,17 @@ nav li {
   width: 100vh;
   height: 60vh;
 }
-.pak-study-visa{
-text-align: left;
-}
 .islamabad {
   width: 500px;
   height: auto;
 }
-.pak-jobseeker-visa {
+.pak-jobseeker-visa, .pak-study-visa, .pak-family-reunion-visa {
+  text-align: left;
+}
+.ind-jobseeker-visa{
+  text-align: left;
+}
+.ind-study-visa{
   text-align: left;
 }
 .new-delhi {
@@ -181,6 +184,14 @@ text-align: left;
   height: auto;
 }
 .new-york {
+  width: 500px;
+  height: auto;
+}
+.colombo{
+  width: 500px;
+  height: auto;
+}
+.christchurch{
   width: 500px;
   height: auto;
 }

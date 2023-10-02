@@ -7,7 +7,7 @@ function IndiaOptionsPage() {
         { name: 'I am going to work in Germany', link: '/ResultPage' },
         { name: 'I am bringing my family to Germany', link: '/india-to-germany/family' },
         { name: 'I am going to study in Germany', link: '/india-to-germany/student' },
-        { name: 'I am going to seek a job in Germany', link: '../India/IndiaFamilyReunion.jsx' },
+        { name: 'I am going to seek a job in Germany', link: '/india-to-germany/jobseeker'},
     ];
 
     return (

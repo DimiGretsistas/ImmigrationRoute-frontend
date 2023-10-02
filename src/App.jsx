@@ -18,9 +18,11 @@ import CurrentPlace from "./pages/CurrentPlace";
 import UsaOptionsPage from "./pages/USA/UsaOptionsPage";
 import SriLankaOptionsPage from "./pages/SriLanka/SriLankaOptionsPage";
 import NewZealandOptionsPage from "./pages/NewZealand/NewZealandOptionsPage";
-import FamilyReunionVisaChecklist from "./pages/India/FamilyReunionVisaChecklist";
 import PakistanStudyVisa from "./pages/Pakistan/PakistanStudyVisa";
 import PakistanJobSeekerVisaPage from "./pages/Pakistan/PakistanJobSeekerVisa";
+import PakistanFamilyReunionVisa from "./pages/Pakistan/PakistanFamilyReunionVisa";
+import IndiaJobSeekerVisa from "./pages/India/IndiaJobSeekerVisaPage.JSX";
+import IndiaStudyVisaPage from "./pages/India/IndiaStudyVisaPage";
 
 function App() {
   return (
@@ -44,12 +46,17 @@ function App() {
         <Route path="/pakistan-to-germany/jobseeker"
           element={<IsPrivate> <PakistanJobSeekerVisaPage /> </IsPrivate>}
         />
-
+        <Route path="/pakistan-to-germany/family-reunion"
+          element={<IsPrivate> <PakistanFamilyReunionVisa /> </IsPrivate>}
+        />
         <Route path="/ind"
           element={<IsPrivate> <IndiaOptionsPage /> </IsPrivate>}
         />
         <Route path="/india-to-germany/student"
-          element={<IsPrivate> <FamilyReunionVisaChecklist /> </IsPrivate>}
+          element={<IsPrivate> <IndiaStudyVisaPage /> </IsPrivate>}
+        />
+        <Route path="/india-to-germany/jobseeker"
+          element={<IsPrivate> <IndiaJobSeekerVisa /> </IsPrivate>}
         />
         <Route path="/sriLanka"
           element={<IsPrivate> <SriLankaOptionsPage /> </IsPrivate>}
