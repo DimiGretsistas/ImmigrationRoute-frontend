@@ -8,7 +8,7 @@ function CurrentPlace() {
     { name: 'India', path: '/ind' },
     { name: 'Sri Lanka', path: '/sriLanka' },
     { name: 'USA', path: '/usa' },
-    { name: 'New Zealand', path: '/newZealand' },
+    { name: 'Australia', path: '/aus' },
     { name: 'Germany', path: '/ger' }
   ];
 

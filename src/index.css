@@ -166,32 +166,31 @@ nav li {
   width: 100vh;
   height: 60vh;
 }
-.islamabad {
-  width: 500px;
-  height: auto;
-}
 .pak-jobseeker-visa, .pak-study-visa, .pak-family-reunion-visa {
   text-align: left;
 }
-.ind-jobseeker-visa{
+.ind-jobseeker-visa, .ind-study-visa, .ind-family-reunion-visa {
   text-align: left;
 }
-.ind-study-visa{
+.sriLanka-jobseeker-visa, .sriLanka-study-visa, .sriLanka-family-reunion-visa {
   text-align: left;
 }
-.new-delhi {
+.usa-study-visa, .usa-family-reunion-visa{
+  text-align: left;
+}
+.aus-family-reunion-visa, .aus-study-visa{
+  text-align: left;
+}
+
+.new-delhi, .new-york, .colombo, .perth, .islamabad, .berlin{
   width: 500px;
   height: auto;
 }
-.new-york {
-  width: 500px;
+.germany-usa, .germany-Australia{
+  width: 800px;
   height: auto;
 }
-.colombo{
-  width: 500px;
-  height: auto;
-}
-.christchurch{
-  width: 500px;
-  height: auto;
+.the-world{
+  width: 1100px;
+  height: 530px;
 }

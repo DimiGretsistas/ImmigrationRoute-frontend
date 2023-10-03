@@ -13,7 +13,7 @@ function IndiaJobSeekerVisa() {
             <div className='ind-jobseeker-visa'>
                 <h3>Required Documents:</h3>
                 <ul>
-                    <li>valid passport issued within the last 10 years and with at least 2 empty pages</li>
+                    <li>Valid passport issued within the last 10 years and with at least 2 empty pages</li>
                     <li>Application form & declaration (in accordance with Section 54 of the Residence Act)duly signed (2 copies)</li>
                     <li>Declaration for Additional contact and legal representation information (2 copies)</li>
                     <li>2 current, identical biometric passport photos</li>

@@ -16,9 +16,9 @@ function IndiaStudyVisaPage() {
                     <li>Valid passport (issued within the last 10 years and valid for at least another year as of date of visa application; passports with observations regarding the front data page cannot be accepted) with at least two empty pages </li>
                     <li>Application form & declaration (in accordance with Section 54 of the Residence Act) duly signed </li>
                     <li>Declaration for additional contact and legal representation information</li>
-                    <li>Copy of your passport’s data page (A4 size copy)</li>
+                    <li>Copy of your passport's data page (A4 size copy)</li>
                     <li>Statement of purpose / Motivation letter</li>
-                    <li>Certificate issued by the APS (Academic Evaluation Centre) – please consult www.aps-india.de for further information about application process.See the link below for exceptions.</li>
+                    <li>Certificate issued by the APS (Academic Evaluation Centre) - please consult www.aps-india.de for further information about application process.See the link below for exceptions.</li>
                     <li>Proof of admittance to the study course/preparatory college (original and 2 copies) including information on the language of instruction</li>
                     <li>Proof of your language skills (Exceptions and specific school information listed in the link below)</li>
                     <li>Certificates of all academic qualifications you have previously obtained (original and 2 copies)</li>
@@ -29,7 +29,7 @@ function IndiaStudyVisaPage() {
                         - blocked account for the first year of your stay, amounting to 11,208 euros
                     </li>
                     <li>If the university charges tuition fees: Proof of funds equivalent to the tuition fees for the first two semesters and the fee structure</li>
-                    <li>Applicant’s declaration</li>
+                    <li>Applicant's declaration</li>
                     <li>3 passport pictures according to biometric specifications, not older than 6 months</li>
                     <li>Visa fee of 75 € payable in INR only </li>
                     <li>Travel health insurance valid on arrival in Germany to the date of enrollment at the University (mentioned in your admission letter) (approx. 3 months)</li>

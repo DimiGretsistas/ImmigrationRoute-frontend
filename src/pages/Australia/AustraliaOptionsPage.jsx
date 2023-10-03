@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Christchurch from '../../assets/new-zealand.jpeg'
+import Perth from '../../assets/perth.jpeg'
 
-function NewZealandOptionsPage() {
+function AustraliaOptionsPage() {
     const visaOptions = [
         { name: 'I am going to work in Germany', link: '/ResultPage' },
-        { name: 'I am bringing my family to Germany', link: '/newZealand-to-germany/work' },
-        { name: 'I am going to study in Germany', link: '/newZealand-to-germany/student' },
-        { name: 'I am going to seek a job in Germany', link: '/newZealand-to-germany/family-reunion' },
+        { name: 'I am bringing my family to Germany', link: '/aus-to-germany/family-reunion' },
+        { name: 'I am going to study in Germany', link: '/aus-to-germany/student' },
+        { name: 'I am going to seek a job in Germany', link: '/aus-to-germany/jobseeker' },
     ];
 
     return (
         <div className="visa-options-container">
-            <h1>Applying for a German Visa from New Zealand</h1>
+            <h1>Applying for a German Visa from Australia</h1>
             <p>
-                Are you living in New Zealand and are planning to move to Germany for work, study or any other reason? Then choose
+                Are you living in Autsralia and are planning to move to Germany for work, study or any other reason? Then choose
                 the the purpose of your future stay in Germany and explore your options for each purpose of stay.
             </p>
-            <img className='christchurch' src={Christchurch} />
+            <img className='perth' src={Perth} />
 
             <div className="visa-buttons">
                 {visaOptions.map((option, index) => (
@@ -32,4 +32,4 @@ function NewZealandOptionsPage() {
     );
 }
 
-export default NewZealandOptionsPage;
+export default AustraliaOptionsPage;
