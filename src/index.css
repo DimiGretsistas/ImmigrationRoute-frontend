@@ -31,13 +31,14 @@ textarea {
 }
 
 nav {
-  background: #515f7d;
+  background: #4169e1;
   color: white;
   padding: 0px 20px;
   box-shadow: 0px 1px 2px gray;
   width: 100%;
   margin-bottom: 15px;
   padding: 5px;
+  border: 3px solid black;
 }
 
 nav li {
@@ -53,8 +54,10 @@ nav li {
   box-shadow: 0px 2px 3px grey;
   margin: 0 auto;
   margin-bottom: 20px;
-  background: #94a7c8;
+  background: rgb(0, 174, 255);
+  color: white;
   border-radius: 4px;
+  border: 5px solid black;;
 }
 
 .JourneyCard h3::after {
@@ -68,7 +71,7 @@ nav li {
 .SignupPage,
 .LoginPage {
   background: #f9eec3;
-  border: 5px solid greenyellow;
+  border: 5px solid black;
   box-shadow: 0px 2px 3px grey;
   width: 400px;
   text-align: center;
@@ -76,7 +79,7 @@ nav li {
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 4px;
-  color:greenyellow;
+  color:white;
   background-color: #4169E1;
 }
 
@@ -105,7 +108,7 @@ nav li {
 
 .AddTask button,
 .AddJourney button {
-  display: block;
+  display: flex;
 }
 
 .TaskCard {
@@ -123,7 +126,7 @@ nav li {
 .visa-button {
   background-color: #007bff;
   color: #fff;
-  border: none;
+  border: 3px solid black;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
@@ -152,11 +155,14 @@ nav li {
 
 .visa-option-button:hover {
   background-color: #0056b3;
+  border: 3px black solid;
+
 }
 
 .visa-buttons {
   display: flex;
   justify-content: center;
+
 }
 .berlin-germany {
   width: 100%;
@@ -181,9 +187,13 @@ nav li {
 .aus-family-reunion-visa, .aus-study-visa{
   text-align: left;
 }
+.ger-jobseeker-visa{
+  text-align: left;
+}
 
-.new-delhi, .new-york, .colombo, .perth, .islamabad, .berlin{
-  width: 500px;
+
+.new-delhi, .new-york, .colombo, .perth, .islamabad, .kiel{
+  width: 600px;
   height: auto;
 }
 .germany-usa, .germany-Australia{

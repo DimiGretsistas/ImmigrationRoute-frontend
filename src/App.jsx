@@ -38,6 +38,7 @@ import AustraliaStudyVisaPage from "./pages/Australia/AustraliaStudyVisaPage";
 import AustraliaJobSeekerVisaPage from "./pages/Australia/AustraliaJobSeekerVisaPage";
 import GermanyOptionsPage from "./pages/Germany/GermanyOptionspAGE.JSX";
 import GermanyStudyVisaPage from "./pages/Germany/GermanyStudyVisaPage";
+import GermanyJobSeekerVisaPage from "./pages/Germany/GermanyJobSeekerVisaPage";
 
 function App() {
   return (
@@ -117,6 +118,9 @@ function App() {
         />
         <Route path="/in-germany/student"
           element={<IsPrivate> <GermanyStudyVisaPage /> </IsPrivate>}
+        />
+        <Route path="/in-germany/jobseeker"
+          element={<IsPrivate> <GermanyJobSeekerVisaPage /> </IsPrivate>}
         />
         <Route path="/ResultPage"
           element={<IsPrivate> <ResultPage /> </IsPrivate>}
