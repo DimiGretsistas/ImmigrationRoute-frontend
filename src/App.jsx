@@ -27,7 +27,7 @@ import EditUserProfilePage from "./pages/EditUserProfilePage";
 import UserProfilePage from "./pages/UserProfilePage";
 import IndiaFamilyReunionVisaChecklist from "./pages/India/IndiaFamilyReunionPage";
 import SriLankaJobSeekerVisaPage from "./pages/SriLanka/SriLankaJobSeekerVisaPage";
-import SriLankaStudyVisaPage from "./pages/SriLanka/SriLankaSudyVisaPage";
+import SriLankaStudyVisaPage from "./pages/SriLanka/SriLankaStudyVisaPage";
 import SriLankaFamilyReunionVisaPage from "./pages/SriLanka/SriLankaFamilyReunionVisaPage";
 import UsaStudyVisaPage from "./pages/USA/UsaStudyVisaPage";
 import UsaJobSeekerVisaPage from "./pages/USA/UsaJobSeekerVisaPage";
@@ -39,6 +39,13 @@ import AustraliaJobSeekerVisaPage from "./pages/Australia/AustraliaJobSeekerVisa
 import GermanyOptionsPage from "./pages/Germany/GermanyOptionspAGE.JSX";
 import GermanyStudyVisaPage from "./pages/Germany/GermanyStudyVisaPage";
 import GermanyJobSeekerVisaPage from "./pages/Germany/GermanyJobSeekerVisaPage";
+import GermanyFamilyReunionVisaPage from "./pages/Germany/GermanyFamilyReunionVisaPage";
+import GermanyWorkVisaPage from "./pages/Germany/GermanyWorkVisaPage";
+import AustraliaWorkVisaPage from "./pages/Australia/AustraliaWorkVisaPage";
+import IndiaWorkVisaPage from "./pages/India/IndiaWorkVisaPage";
+import PakistanWorkVisaPage from "./pages/Pakistan/PakistanWorkVisaPage";
+import UsaWorkVisaPage from "./pages/USA/UsaWorkVisaPage";
+import SriLankaWorkVisaPage from "./pages/SriLanka/SriLankaWorkVisapAGE.JSX";
 
 function App() {
   return (
@@ -56,17 +63,23 @@ function App() {
         <Route path="/pak"
           element={<IsPrivate> <PakistanOptionsPage /> </IsPrivate>}
         />
-        <Route path="/pakistan-to-germany/student"
+          <Route path="/pak-to-germany/work"
+          element={<IsPrivate> <PakistanWorkVisaPage /> </IsPrivate>}
+        />
+        <Route path="/pak-to-germany/student"
           element={<IsPrivate> <PakistanStudyVisa /> </IsPrivate>}
         />
-        <Route path="/pakistan-to-germany/jobseeker"
+        <Route path="/pak-to-germany/jobseeker"
           element={<IsPrivate> <PakistanJobSeekerVisaPage /> </IsPrivate>}
         />
-        <Route path="/pakistan-to-germany/family-reunion"
+        <Route path="/pak-to-germany/family-reunion"
           element={<IsPrivate> <PakistanFamilyReunionVisa /> </IsPrivate>}
         />
         <Route path="/ind"
           element={<IsPrivate> <IndiaOptionsPage /> </IsPrivate>}
+        />
+        <Route path="/india-to-germany/work"
+          element={<IsPrivate> <IndiaWorkVisaPage /> </IsPrivate>}
         />
         <Route path="/india-to-germany/student"
           element={<IsPrivate> <IndiaStudyVisaPage /> </IsPrivate>}
@@ -80,6 +93,9 @@ function App() {
         <Route path="/sriLanka"
           element={<IsPrivate> <SriLankaOptionsPage /> </IsPrivate>}
         />
+          <Route path="/sriLanka-to-germany/work"
+          element={<IsPrivate> <SriLankaWorkVisaPage /> </IsPrivate>}
+        />
         <Route path="/sriLanka-to-germany/student"
           element={<IsPrivate> <SriLankaStudyVisaPage /> </IsPrivate>}
         />
@@ -91,6 +107,9 @@ function App() {
         />
         <Route path="/usa"
           element={<IsPrivate> <UsaOptionsPage /> </IsPrivate>}
+        />
+          <Route path="/usa-to-germany/work"
+          element={<IsPrivate> <UsaWorkVisaPage /> </IsPrivate>}
         />
         <Route path="/usa-to-germany/student"
           element={<IsPrivate> <UsaStudyVisaPage /> </IsPrivate>}
@@ -104,6 +123,9 @@ function App() {
         <Route path="/aus"
           element={<IsPrivate> <AustraliaOptionsPage /> </IsPrivate>}
         />
+        <Route path="/aus-to-germany/work"
+          element={<IsPrivate> <AustraliaWorkVisaPage /> </IsPrivate>}
+        />
         <Route path="/aus-to-germany/student"
           element={<IsPrivate> <AustraliaStudyVisaPage /> </IsPrivate>}
         />
@@ -116,15 +138,21 @@ function App() {
         <Route path="/ger"
           element={<IsPrivate> <GermanyOptionsPage /> </IsPrivate>}
         />
+        <Route path="/in-germany/work"
+          element={<IsPrivate> <GermanyWorkVisaPage /> </IsPrivate>}
+        />
         <Route path="/in-germany/student"
           element={<IsPrivate> <GermanyStudyVisaPage /> </IsPrivate>}
         />
         <Route path="/in-germany/jobseeker"
           element={<IsPrivate> <GermanyJobSeekerVisaPage /> </IsPrivate>}
         />
-        <Route path="/ResultPage"
-          element={<IsPrivate> <ResultPage /> </IsPrivate>}
+        <Route path="/in-germany/family-reunion"
+          element={<IsPrivate> <GermanyFamilyReunionVisaPage /> </IsPrivate>}
         />
+        {/* <Route path="/ResultPage"
+          element={<IsPrivate> <ResultPage /> </IsPrivate>} */}
+        {/* /> */}
         <Route
           path="/journeys"
           element={<IsPrivate> <JourneyListPage /> </IsPrivate>}

@@ -13,11 +13,12 @@ function UserProfilePage() {
     useEffect(() => {
         const getUser = async () => {
             try {
-                console.log("Fetching user profile for userId:", userId);
-                const response = await axios.get(`${API_URL}/user/${userId}`);
+                const storedToken = localStorage.getItem('authToken');
+                // console.log("Fetching user profile for userId:", userId);
+                const response = await axios.get(`${API_URL}/user/${userId}`, { headers: { Authorization: `Bearer ${storedToken}` } });
                 console.log("Axios Response:", response);
                 const userData = response.data.user;
-                setName(userData.name);
+                setsetUsername(userData.name);
                 setEmail(userData.email);
             } catch (error) {
                 console.error("Error fetching user profile:", error);
@@ -31,12 +32,11 @@ function UserProfilePage() {
     return (
         <div className="ProfileContainer">
             <div className="Greeting">
-                <h1>Welcome to your profile</h1>
+                <h1>Welcome to your profile {username}</h1>
                 <h2>Here you can review your open journey or create new ones!</h2>
             </div>
             <div className="ProfileContentWrapper">
                 <h3>{userId}</h3>
-                <h4>Name: {username}</h4>
             </div>
         </div>
     );

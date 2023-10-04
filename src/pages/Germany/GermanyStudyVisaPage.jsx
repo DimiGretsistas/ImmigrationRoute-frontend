@@ -12,7 +12,7 @@ function GermanyStudyVisaPage() {
                 <p>Complete and readable</p>
                 <p>Not stapled</p>
             </span>
-            <div className='aus-study-visa'>
+            <div className='ger-study-visa'>
                 <h3>Required Documents:</h3>
                 <ul>
                     <li>Valid passport</li>

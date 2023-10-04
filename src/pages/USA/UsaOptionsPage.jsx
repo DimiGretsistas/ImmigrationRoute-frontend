@@ -4,7 +4,7 @@ import NewYork from '../../assets/new-york.jpeg';
 
 function UsaOptionsPage() {
     const visaOptions = [
-        { name: 'I am going to work in Germany', link: '/ResultPage' },
+        { name: 'I am going to work in Germany', link: '/usa-to-germany/work' },
         { name: 'I am bringing my family to Germany', link: '/usa-to-germany/family-reunion' },
         { name: 'I am going to study in Germany', link: '/usa-to-germany/student' },
         { name: 'I am going to seek a job in Germany', link: '/usa-to-germany/jobseeker' },

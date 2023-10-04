@@ -172,26 +172,24 @@ nav li {
   width: 100vh;
   height: 60vh;
 }
-.pak-jobseeker-visa, .pak-study-visa, .pak-family-reunion-visa {
+.pak-jobseeker-visa, .pak-study-visa, .pak-family-reunion-visa, .pak-work-visa {
   text-align: left;
 }
-.ind-jobseeker-visa, .ind-study-visa, .ind-family-reunion-visa {
+.ind-jobseeker-visa, .ind-study-visa, .ind-family-reunion-visa, .ind-work-visa {
   text-align: left;
 }
-.sriLanka-jobseeker-visa, .sriLanka-study-visa, .sriLanka-family-reunion-visa {
+.sriLanka-jobseeker-visa, .sriLanka-study-visa, .sriLanka-family-reunion-visa, .sriLanka-work-visa {
   text-align: left;
 }
-.usa-study-visa, .usa-family-reunion-visa{
+.usa-study-visa, .usa-family-reunion-visa, .usa-work-visa{
   text-align: left;
 }
-.aus-family-reunion-visa, .aus-study-visa{
+ .aus-study-visa, .aus-family-reunion-visa, .aus-work-visa{
   text-align: left;
 }
-.ger-jobseeker-visa{
+.ger-jobseeker-visa, .ger-study-visa,  .ger-family-reunion-visa, .ger-work-visa{
   text-align: left;
 }
-
-
 .new-delhi, .new-york, .colombo, .perth, .islamabad, .kiel{
   width: 600px;
   height: auto;

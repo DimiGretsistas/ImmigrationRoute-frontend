@@ -4,10 +4,10 @@ import Islamabad from '../../assets/islamabad.jpeg'
 
 function PakistanOptionsPage() {
     const visaOptions = [
-        { name: 'I am going to work in Germany', link: '/ResultPage' },
-        { name: 'I am bringing my family to Germany', link: '/pakistan-to-germany/family-reunion' },
-        { name: 'I am going to study in Germany', link: '/pakistan-to-germany/student' },
-        { name: 'I am going to seek a job in Germany', link: '/pakistan-to-germany/jobseeker' },
+        { name: 'I am going to work in Germany', link: '/pak-to-germany/work' },
+        { name: 'I am bringing my family to Germany', link: '/pak-to-germany/family-reunion' },
+        { name: 'I am going to study in Germany', link: '/pak-to-germany/student' },
+        { name: 'I am going to seek a job in Germany', link: '/pak-to-germany/jobseeker' },
     ];
 
     return (

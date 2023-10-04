@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Kiel from '../../assets/kiel.jpeg'
 function GermanyOptionsPage() {
     const visaOptions = [
-        { name: 'I am already working in Germany', link: '/ResultPage' },
+        { name: 'I am already working in Germany', link: '/in-germany/work' },
         { name: 'My family is already in Germany', link: '/in-germany/family-reunion' },
         { name: 'I am already studying in Germany', link: '/in-germany/student' },
         { name: 'I am seeking a job while in Germany', link: '/in-germany/jobseeker' },

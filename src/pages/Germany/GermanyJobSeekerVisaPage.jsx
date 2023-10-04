@@ -32,14 +32,10 @@ function GermanyJobSeekerVisaPage() {
                     <li>Form application for a residence permit(Only required for new entry and one-time application)</li>
                     <li>Proof of primary residence in Berlin: Certificate of registration of the apartment (registration confirmation) or
                         Rental agreement and move-in confirmation from the landlord</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
                 </ul>
             </div>
             <p>
-                For further and detailed information regarding every single document, please click <a href="https://pakistan.diplo.de/blob/2583220/https://service.berlin.de/dienstleistung/324661//jobseeker-data.pdf">HERE</a>.
+                For further and detailed information regarding every single document, please click <a href="https://service.berlin.de/dienstleistung/324661/">HERE</a>.
             </p>
             <p>
                 PLEASE NOTE: An extension of this residence permit is excluded if appropriate employment could not be found within the period of validity.
