@@ -11,7 +11,7 @@ function HomePage() {
       <img className='the-world' src={Berlin} />
       <div className="button-container">
         <Link to='/currentPlace'>
-          <button className="option-button">Get Started!</button>
+          <button className="start-button">Get Started!</button>
         </Link>
       </div>
     </div>

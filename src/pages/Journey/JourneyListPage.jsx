@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import JourneyCard from "../../components/JourneyCard";
 import AddTask from "../../components/AddTask";
-
+import BlueMap from "../../assets/blue-world-map.jpg"
 const API_URL = "http://localhost:5005";
 
 
@@ -33,9 +33,8 @@ function JourneyListPage() {
     return (
 
         <div className="JourneyListPage">
-            <h1>Welcome to your profile</h1>
+            <h1>Welcome to your list of Journeys</h1>
             <AddJourney refreshJourneys={getAllJourneys} />
-
             {journeys.map((journey) => (
                 <JourneyCard key={journey._id} {...journey} />
             ))}

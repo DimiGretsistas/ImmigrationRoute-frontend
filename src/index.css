@@ -16,6 +16,32 @@ select {
   margin: 5px;
   font-size: 18px;
 }
+.start-button{
+  background-color: #4169E1;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  border: 3px solid black;
+}
+  .start-button:hover {
+    background-color: black;
+    color: whitesmoke;
+    border: 3px solid #4169E1;
+    margin: 0px;
+
+  }
+
+.nav-buttons{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.nav-buttons:hover{
+  background-color: black;
+  color: #4169E1;
+  border: 3px solid #4169E1;
+}
 
 label {
   width: 200px;
@@ -34,11 +60,13 @@ nav {
   background: #4169e1;
   color: white;
   padding: 0px 20px;
-  box-shadow: 0px 1px 2px gray;
+  box-shadow: 5px 5px 5px gray;
   width: 100%;
   margin-bottom: 15px;
   padding: 5px;
   border: 3px solid black;
+  border-radius: 10px;
+
 }
 
 nav li {
@@ -78,13 +106,13 @@ nav li {
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 4px;
   color:white;
   background-color: #4169E1;
+  border-radius: 10px;
 }
 
 .EditJourneyPage {
-  background-color: rgb(239, 196, 88);
+  background-color: #4169E1;
 }
 
 .SignupPage,
@@ -112,7 +140,7 @@ nav li {
 }
 
 .TaskCard {
-  background-color: #dfeef9;
+  background-color: rgb(0, 174, 255);
 }
 .button-list {
   display: flex;
@@ -126,7 +154,7 @@ nav li {
 .visa-button {
   background-color: #007bff;
   color: #fff;
-  border: 3px solid black;
+  border: 5px solid black;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
@@ -140,23 +168,38 @@ nav li {
   text-align: center;
   margin: auto;
   max-width: 600px;
-  padding: 20px;
+  padding-top: 0px;
 }
 
 .visa-option-button {
-  background-color: #007bff;
+  background-color: #4169E1;
   color: #fff;
-  border: none;
+  border: 3px solid black;
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
-  margin: 5px;
+  margin-top: 0px;
 }
 
 .visa-option-button:hover {
-  background-color: #0056b3;
-  border: 3px black solid;
+  background-color: black;
+  color: whitesmoke;
+  border: 3px solid #4169E1;
+  margin: 10px;
 
+}
+
+.current-button{
+  background-color: #4169E1;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  border: 3px solid black;
+}
+.current-button:hover{
+  background-color: black;
+  color: whitesmoke;
+  border: 3px solid #4169E1;
 }
 
 .visa-buttons {
@@ -193,6 +236,7 @@ nav li {
 .new-delhi, .new-york, .colombo, .perth, .islamabad, .kiel{
   width: 600px;
   height: auto;
+  padding-top: 0px;
 }
 .germany-usa, .germany-Australia{
   width: 800px;
@@ -201,4 +245,39 @@ nav li {
 .the-world{
   width: 1100px;
   height: 530px;
+}
+.JourneyListPage{
+  background-image: url()
+}
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3;
 }

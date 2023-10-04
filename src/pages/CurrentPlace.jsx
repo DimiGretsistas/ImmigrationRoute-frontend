@@ -20,7 +20,7 @@ function CurrentPlace() {
       <div className="country-buttons">
         {countries.map((country, index) => (
           <Link to={country.path} key={index} className="country-button">
-            <button>{country.name}</button>
+            <button className="current-button">{country.name}</button>
           </Link>
         ))}
       </div>

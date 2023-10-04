@@ -10,7 +10,7 @@ import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import IsAnon from "./components/IsAnon";
 import IsPrivate from "./components/isPrivate";
-import ProfilePage from "./pages/UserProfilePage";
+import ProfilePage from "./pages/UserProfile/UserProfilePage";
 import ResultPage from "./pages/ResultPage";
 import PakistanOptionsPage from "./pages/Pakistan/PakistanOptionsPage";
 import IndiaOptionsPage from "./pages/India/IndiaOptionsPage";
@@ -23,8 +23,8 @@ import PakistanJobSeekerVisaPage from "./pages/Pakistan/PakistanJobSeekerVisa";
 import PakistanFamilyReunionVisa from "./pages/Pakistan/PakistanFamilyReunionVisa";
 import IndiaJobSeekerVisa from "./pages/India/IndiaJobSeekerVisaPage.JSX";
 import IndiaStudyVisaPage from "./pages/India/IndiaStudyVisaPage";
-import EditUserProfilePage from "./pages/EditUserProfilePage";
-import UserProfilePage from "./pages/UserProfilePage";
+import EditUserProfilePage from "./pages/UserProfile/EditUserProfilePage";
+import UserProfilePage from "./pages/UserProfile/UserProfilePage";
 import IndiaFamilyReunionVisaChecklist from "./pages/India/IndiaFamilyReunionPage";
 import SriLankaJobSeekerVisaPage from "./pages/SriLanka/SriLankaJobSeekerVisaPage";
 import SriLankaStudyVisaPage from "./pages/SriLanka/SriLankaStudyVisaPage";
@@ -36,7 +36,7 @@ import AustraliaOptionsPage from "./pages/Australia/AustraliaOptionsPage";
 import AustraliaFamilyReunionVisaPage from "./pages/Australia/AustraliaFamilyReunionVisaPage";
 import AustraliaStudyVisaPage from "./pages/Australia/AustraliaStudyVisaPage";
 import AustraliaJobSeekerVisaPage from "./pages/Australia/AustraliaJobSeekerVisaPage";
-import GermanyOptionsPage from "./pages/Germany/GermanyOptionspAGE.JSX";
+import GermanyOptionsPage from "./pages/Germany/GermanyVisaOptionsPage.jsx";
 import GermanyStudyVisaPage from "./pages/Germany/GermanyStudyVisaPage";
 import GermanyJobSeekerVisaPage from "./pages/Germany/GermanyJobSeekerVisaPage";
 import GermanyFamilyReunionVisaPage from "./pages/Germany/GermanyFamilyReunionVisaPage";
@@ -46,6 +46,7 @@ import IndiaWorkVisaPage from "./pages/India/IndiaWorkVisaPage";
 import PakistanWorkVisaPage from "./pages/Pakistan/PakistanWorkVisaPage";
 import UsaWorkVisaPage from "./pages/USA/UsaWorkVisaPage";
 import SriLankaWorkVisaPage from "./pages/SriLanka/SriLankaWorkVisapAGE.JSX";
+// import DeleteUserProfilePage from "./pages/UserProfile/DeleteUserProfilePage";
 
 function App() {
   return (
@@ -63,7 +64,7 @@ function App() {
         <Route path="/pak"
           element={<IsPrivate> <PakistanOptionsPage /> </IsPrivate>}
         />
-          <Route path="/pak-to-germany/work"
+        <Route path="/pak-to-germany/work"
           element={<IsPrivate> <PakistanWorkVisaPage /> </IsPrivate>}
         />
         <Route path="/pak-to-germany/student"
@@ -93,7 +94,7 @@ function App() {
         <Route path="/sriLanka"
           element={<IsPrivate> <SriLankaOptionsPage /> </IsPrivate>}
         />
-          <Route path="/sriLanka-to-germany/work"
+        <Route path="/sriLanka-to-germany/work"
           element={<IsPrivate> <SriLankaWorkVisaPage /> </IsPrivate>}
         />
         <Route path="/sriLanka-to-germany/student"
@@ -108,7 +109,7 @@ function App() {
         <Route path="/usa"
           element={<IsPrivate> <UsaOptionsPage /> </IsPrivate>}
         />
-          <Route path="/usa-to-germany/work"
+        <Route path="/usa-to-germany/work"
           element={<IsPrivate> <UsaWorkVisaPage /> </IsPrivate>}
         />
         <Route path="/usa-to-germany/student"
@@ -150,9 +151,7 @@ function App() {
         <Route path="/in-germany/family-reunion"
           element={<IsPrivate> <GermanyFamilyReunionVisaPage /> </IsPrivate>}
         />
-        {/* <Route path="/ResultPage"
-          element={<IsPrivate> <ResultPage /> </IsPrivate>} */}
-        {/* /> */}
+  
         <Route
           path="/journeys"
           element={<IsPrivate> <JourneyListPage /> </IsPrivate>}
@@ -169,6 +168,10 @@ function App() {
           path="/user/:userId/edit"
           element={<IsPrivate> <EditUserProfilePage /> </IsPrivate>}
         />
+          {/* <Route
+          path="/user/:userId/delete"
+          element={<IsPrivate> <DeleteUserProfilePage /> </IsPrivate>}
+        /> */}
         <Route
           path="/journeys/:journeyId"
           element={<IsPrivate> <JourneyDetailsPage /> </IsPrivate>}

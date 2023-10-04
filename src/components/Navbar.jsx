@@ -19,21 +19,21 @@ function Navbar() {
   return (
     <nav>
       <Link to="/home">
-        <button>Home</button>
+        <button className="nav-buttons" >Home</button>
       </Link>
 
       {isLoggedIn && (
         <>
           <Link to="/journeys">
-            <button>Journeys</button>
+            <button className="nav-buttons">Journeys</button>
           </Link>
 
           <Link to={`/user/${user._id}`}>
-            <button>Profile Page</button>
+            <button className="nav-buttons">Profile Page</button>
           </Link>
 
-          <button onClick={logOutUser}>Logout</button>
-          <span>{user && user.name}</span>
+          <button className="nav-buttons" onClick={logOutUser}>Logout</button>
+          {/* <span >{user && user.name}</span> */}
         </>
       )}
 
