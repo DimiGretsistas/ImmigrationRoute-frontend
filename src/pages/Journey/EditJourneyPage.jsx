@@ -62,7 +62,7 @@ function EditJourneyPage(props) {
 
             <form onSubmit={handleFormSubmit}>
                 <label>Title:</label>
-                <input
+                <input className="title-input"
                     type="text"
                     name="title"
                     value={title}
@@ -70,13 +70,13 @@ function EditJourneyPage(props) {
                 />
 
                 <label>Description:</label>
-                <textarea
+                <textarea className="text-description"
                     name="description"
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <input ClassName="submit-update" type="submit" value="Submit Update" />
+                <input className="submit-update" type="submit" value="Submit Update" />
             </form>
 
             <button className="delete-journey" onClick={deleteJourney}>Delete Journey</button>

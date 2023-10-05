@@ -11,7 +11,6 @@ function EditUserProfilePage() {
     email: "",
     password: "",
     name: "",
-    avatar: "",
   });
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -29,7 +28,6 @@ function EditUserProfilePage() {
         setFormData({
           email: userData.email,
           name: userData.name,
-          avatar: userData.avatar,
         });
       } catch (error) {
         console.error("Error fetching user data:", error);

@@ -33,7 +33,7 @@ function AddTask(props) {
 
             <form onSubmit={handleSubmit}>
                 <label>Title:</label>
-                <input
+                <input className="title-input"
                     type="text"
                     name="title"
                     value={title}
@@ -41,7 +41,7 @@ function AddTask(props) {
                 />
 
                 <label>Description:</label>
-                <textarea
+                <textarea className="text-description"
                     type="text"
                     name="description"
                     value={description}

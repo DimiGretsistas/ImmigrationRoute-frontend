@@ -58,11 +58,14 @@ function UserProfilePage() {
                 <h1>Welcome to your profile, {username}</h1>
                 <h2>Within this section, you have the ability to review, make edits to, and even delete your profile.</h2>
             </div>
-            <div className="ProfileContentWrapper">
-                <h3>User ID: {userId}</h3>
-                <p>Email: {email}</p>
-                <Link to={`/user/${userId}/edit`} className="edit-profile-link">Edit Profile</Link>
-                <button onClick={handleDeleteClick}>Delete Profile</button>
+            <div className="ProfileWrapper">
+                <div className="ProfileContentWrapper">
+                    <p className="data-profile">Email: {email}</p>
+                    <p className="data-profile">Name: {username}</p>
+
+                    <Link to={`/user/${userId}/edit`} className="edit-profile-link">Edit Profile</Link>
+                    <button onClick={handleDeleteClick}>Delete Profile</button>
+                </div>
             </div>
         </div>
     );
