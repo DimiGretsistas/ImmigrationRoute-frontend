@@ -30,12 +30,13 @@ function PakistanJobSeekerVisaPage() {
                     <li>Visa Fee in the amount of €75, to be paid in PKR</li>
                 </ul>
             </div>
-            <p>
+            <p className='further-info'>
                 For further and detailed information regarding every single document, please click <a href="https://pakistan.diplo.de/blob/2583220/838a74f80ad58de4340f2cd27ddd9c7a/jobseeker-data.pdf">HERE</a>.
             </p>
-            <p>
-                You also have to provide all original documents (including all of your passports). They will be returned to you on the same day (except the passport you intend to travel on which stays with the Embassy during the processing time of your visa application). Please also bring a pen.
+            <p className='additional-info'>
+                <span className="please-note">PLEASE NOTE:</span> You also have to provide all original documents (including all of your passports). They will be returned to you on the same day (except the passport you intend to travel on which stays with the Embassy during the processing time of your visa application). Please also bring a pen.
             </p>
+
         </div>
     );
 }

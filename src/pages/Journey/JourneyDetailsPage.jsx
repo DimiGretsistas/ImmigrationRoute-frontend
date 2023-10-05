@@ -50,11 +50,11 @@ function JourneyDetailsPage(props) {
             ))}
 
             <Link to="/journeys">
-                <button>Back to journeys</button>
+                <button className="back-to-journeys">Back to journeys</button>
             </Link>
 
             <Link to={`/journeys/edit/${journeyId}`}>
-                <button>Edit Journey</button>
+                <button className="edit-journey">Edit Journey</button>
             </Link>
         </div>
     );

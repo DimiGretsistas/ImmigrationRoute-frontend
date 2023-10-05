@@ -28,9 +28,12 @@ function UsaWorkVisaPage() {
 
                 </ul>
             </div>
-            <p>PLEASE NOTE: In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of visa. Please click <a href="https://www.germany.info/blob/2435484/7a6f62597fa329888121e68d3f0f0511/eu-blue-card-data.pdf">HERE</a> for futher information about it.</p>
-            <p>Additionally: Please note that the German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged.  </p>
-            <p>For further and detailed information regarding every single document, please click <a href="https://www.germany.info/blob/2435486/00ddea91c557d5dc8ae7371a9a1cdfd0/skilled-workers-holding-a-university-degree-data.pdf">HERE</a></p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://www.germany.info/blob/2435486/00ddea91c557d5dc8ae7371a9a1cdfd0/skilled-workers-holding-a-university-degree-data.pdf">HERE</a></p>
+
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of visa. Please click <a className="here-btn" href="https://www.germany.info/blob/2435484/7a6f62597fa329888121e68d3f0f0511/eu-blue-card-data.pdf">HERE</a> for further information about it.  Additionally, the German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged.
+            </p>
+            <p>  </p>
         </div>
     );
 }

@@ -29,13 +29,13 @@ function IndiaJobSeekerVisa() {
                     <li>Proof of health insurance for the duration of your stay</li>
                 </ul>
             </div>
-            <p>
-                For further and detailed information regarding every single document, please click <a href="https://india.diplo.de/in-en/service/-/2539332">HERE</a>.
+            <p className='further-info'>
+                For further and detailed information regarding every single document, please click <a className='here-btn' href="https://india.diplo.de/in-en/service/-/2539332">HERE</a>.
             </p>
-            <p>
-                Kindly note that the German Mission reserves the right to ask for additional documents.
-                Kindly also note that the job seeker visa does not include a work permit. You are only permitted to participate in a try-out-period of no more than 10 hours per week, you are not allowed to take up regular employment. Your visa will however be changed to a residence permit for employment and work permit once you have found adequate employment in Germany.
+            <p className='additional-info'>
+                <span className="please-note">PLEASE NOTE:</span> The German Mission reserves the right to ask for additional documents. Kindly also note that the job seeker visa does not include a work permit. You are only permitted to participate in a try-out period of no more than 10 hours per week; you are not allowed to take up regular employment. Your visa will, however, be changed to a residence permit for employment and work permit once you have found adequate employment in Germany.
             </p>
+
         </div>
     );
 }

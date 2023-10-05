@@ -27,15 +27,13 @@ function SriLankaJobSeekerVisaPage() {
                     <li>Fee: EUR 75 (to be paid in Rs., by credit card or cash) – no refund in caseof rejection! Conversion into Rs. is made based on the exchange rate at the time of application.</li>
                 </ul>
             </div>
-            <p>
-                For further and detailed information regarding every single document, please click <a href="https://colombo.diplo.de/blob/2352252/7d8328071539650d9212212e94928efd/job-seeker-data.pdf">HERE</a>.
+            <p className='further-info'>
+                For further and detailed information regarding every single document, please click <a className='here-btn' href="https://colombo.diplo.de/blob/2352252/7d8328071539650d9212212e94928efd/job-seeker-data.pdf">HERE</a>.
             </p>
-            <p>
-            False or falsified documents will lead to the refusal of the visa and / or further consequences.
-                Incomplete applications may result in refusal. Complete documentation does not guarantee a visa approval.
-                The German Embassy Colombo reserves the right to ask for additional
-                documents and / or call applicant for additional information or interview.
+            <p className='additional-info'>
+                <span className="please-note">PLEASE NOTE:</span> False or falsified documents will lead to the refusal of the visa and / or further consequences. Incomplete applications may result in refusal. Complete documentation does not guarantee a visa approval. The German Embassy Colombo reserves the right to ask for additional documents and / or call the applicant for additional information or an interview.
             </p>
+
         </div>
     );
 }

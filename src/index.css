@@ -117,11 +117,11 @@ nav li {
 
 .SignupPage,
 .LoginPage {
-  background-color: #608dd5;
+  background-color: #4169E1;
 }
 
 .LoginPage {
-  background-color: #94a7c8;
+  background-color: #4169E1;
 }
 
 .EditJourneyPage form,
@@ -140,7 +140,7 @@ nav li {
 }
 
 .TaskCard {
-  background-color: rgb(0, 174, 255);
+  background-color: grey;
 }
 .button-list {
   display: flex;
@@ -185,7 +185,7 @@ nav li {
   background-color: black;
   color: whitesmoke;
   border: 3px solid #4169E1;
-  margin: 10px;
+  margin: -3px;
 
 }
 
@@ -280,4 +280,164 @@ nav li {
 
 .form-container button[type="submit"]:hover {
   background-color: #0056b3;
+}
+.back-to-journeys{
+  background-color: #4169E1;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  border: 3px solid black;
+}
+.back-to-journeys:hover{
+  background-color: black;
+  color: whitesmoke;
+  border: 3px solid #4169E1;
+  margin: 0px;
+}
+.edit-journey{
+  background-color: #4169E1;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  border: 3px solid black;
+}
+.edit-journey:hover{
+  background-color: black;
+  color: whitesmoke;
+  border: 3px solid #4169E1;
+  margin: 0px;
+}
+.delete-journey{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.delete-journey:hover{
+  background-color: black;
+  color: #4169E1;
+  border: 3px solid #4169E1;
+}
+.login{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.login:hover{
+  background-color: black;
+  color: #4169E1;
+  border: 3px solid #4169E1;
+}
+.signup{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.signup:hover{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.submit-btn{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.submit-btn:hover{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.add-task{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.add-task:hover{
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.ProfileContentWrapper {
+  display: flex;
+  flex-direction: column;
+justify-content:center;  /* justify-content: center; */
+  align-items: center;
+  background-color: #4169E1;
+  border: 3px solid black;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; 
+  height: 200px;
+  margin: 0 auto; 
+}
+
+.ProfileContentWrapper h3 {
+  font-size: 1,4rem;
+  margin: 0 0 10px;
+  color: white;
+}
+
+.ProfileContentWrapper p {
+  margin: 0 0 10px;
+}
+
+.ProfileContentWrapper a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.ProfileContentWrapper button {
+  background-color: #4169E1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 3px solid white;
+
+}
+
+.ProfileContentWrapper button:hover {
+  background-color: #c82333;
+}
+.edit-profile-link{
+  color: white;
+  background-color: #4169E1;
+  border-radius: 10px;
+}
+
+.edit-profile-link:hover{
+  background-color: black;
+
+}
+.further-info{
+  background-color: #4169E1;
+  border-radius: 10px;
+  color: white;
+  padding: 4px;
+}
+.here-btn{
+  color: white;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.additional-info{
+  border: 3px solid #4169E1;
+  border-radius: 10px;
+  background-color:black;
+  color: white;
+  padding: 7px;
+}
+.please-note{
+  color: red;
+  font-weight: bold;
 }

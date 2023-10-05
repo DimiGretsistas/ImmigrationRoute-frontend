@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+
+const API_URL = "http://localhost:5005";
+
 
 function EditUserProfilePage() {
   const { userId } = useParams();
@@ -10,9 +13,15 @@ function EditUserProfilePage() {
     name: "",
     avatar: "",
   });
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
 
+
+  const navigate = useNavigate()
+
+
+  console.log(email, name)
   useEffect(() => {
-    // Fetch user data based on the userId parameter
     const fetchUserData = async () => {
       try {
         const response = await axios.get(`/user/${userId}`);
@@ -29,42 +38,45 @@ function EditUserProfilePage() {
 
     fetchUserData();
   }, [userId]);
-
+  console.log(userId)
   const handleSubmit = (e) => {
     e.preventDefault();
+    const requestBody = { email, name };
 
+    const storedToken = localStorage.getItem('authToken');
+    console.log(storedToken)
     axios
-      .put(`/user/${userId}/edit`, formData)
+      .put(`${API_URL}/user/${userId}`, {
+        email,
+        name
+      },
+        { headers: { Authorization: `Bearer ${storedToken}` } }
+      )
       .then((response) => {
-        console.log("User profile updated:", response.data);
-      })
-      .catch((error) => {
-        console.error("Error updating user profile:", error);
+        console.log(response)
+        navigate(`/home`)
       });
   };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
+          name="Email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          type="password"
-          name="password"
-          placeholder="Current Password"
-          value={formData.password}
-          onChange={handleChange}
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
-        <button type="submit">Save Changes</button>
+        <button className="save-changes" type="submit">Save Changes</button>
       </form>
     </div>
   );

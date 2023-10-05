@@ -1,4 +1,4 @@
-import { Children, useEffect, useState } from "react";
+import { Children, useContext, useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { AuthContext } from "../../context/auth.context";
@@ -6,9 +6,11 @@ import { AuthContext } from "../../context/auth.context";
 const API_URL = "http://localhost:5005";
 
 function UserProfilePage() {
+    const navigate = useNavigate()
     const { userId } = useParams();
     const [username, setsetUsername] = useState("");
     const [email, setEmail] = useState("");
+    const { authenticateUser } = useContext(AuthContext)
 
     useEffect(() => {
         const getUser = async () => {
@@ -36,13 +38,15 @@ function UserProfilePage() {
         try {
             const storedToken = localStorage.getItem("authToken");
             await axios.delete(
-                `${API_URL}/user/${userId}/delete`,
+                `${API_URL}/user/${userId}`,
                 {
                     headers: { Authorization: `Bearer ${storedToken}` },
                 }
             );
             // Redirect to a different page (e.g., a success page or home page) after deletion
-            history.push("/home");
+            localStorage.removeItem("authToken")
+            authenticateUser()
+            navigate("/login")
         } catch (error) {
             console.error("Error deleting user profile:", error);
         }
@@ -52,12 +56,12 @@ function UserProfilePage() {
         <div className="ProfileContainer">
             <div className="Greeting">
                 <h1>Welcome to your profile, {username}</h1>
-                <h2>Here you can review, edit, and delete your profile!</h2>
+                <h2>Within this section, you have the ability to review, make edits to, and even delete your profile.</h2>
             </div>
             <div className="ProfileContentWrapper">
                 <h3>User ID: {userId}</h3>
                 <p>Email: {email}</p>
-                <Link to={`/user/${userId}/edit`}>Edit Profile</Link>
+                <Link to={`/user/${userId}/edit`} className="edit-profile-link">Edit Profile</Link>
                 <button onClick={handleDeleteClick}>Delete Profile</button>
             </div>
         </div>

@@ -30,10 +30,13 @@ function UsaFamilyReunionVisaPage() {
 
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://www.germany.info/blob/2435504/449087fce85bf517fa1d77d735f19d27/family-reunion-with-a-german-spouse-child-data.pdf">HERE</a></p>
-            <p>If you are married or will get married to a German citizen, or if you are a parent of a German
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://www.germany.info/blob/2435504/449087fce85bf517fa1d77d735f19d27/family-reunion-with-a-german-spouse-child-data.pdf">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> If you are married or will get married to a German citizen, or if you are a parent of a German
                 minor child and wish to seek gainful permanent residency in Germany (or staying in Germany
-                longer than 3 months), you are required to obtain a residence permit in the form of a visa.</p>
+                longer than 3 months), you are required to obtain a residence permit in the form of a visa.
+            </p>
+
         </div>
     );
 }

@@ -28,7 +28,7 @@ function GermanyStudyVisaPage() {
                     <li>Certificate of registration of the apartment (registration confirmation) OR Rental agreement and move-in confirmation from the landlord</li>
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://service.berlin.de/dienstleistung/305244/">HERE</a></p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://service.berlin.de/dienstleistung/305244/">HERE</a></p>
         </div>
     );
 }

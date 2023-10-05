@@ -11,7 +11,7 @@ function IndiaFamilyReunionVisaChecklist() {
         <p>Not stapled</p>
       </span>
       <div className='ind-family-reunion-visa'>
-                <h3>Required Documents:</h3>
+        <h3>Required Documents:</h3>
         <ul>
           <li>Valid passport (issued within the last 10 years and valid for at least another year as of the date of visa application; passports with observations regarding the front data page cannot be accepted) with at least two empty pages</li>
           <li>Application form, declaration form and contact information form duly filled & signed</li>
@@ -31,21 +31,17 @@ function IndiaFamilyReunionVisaChecklist() {
           <li>Proof of German knowledge (A1 level): “Start Deutsch 1” from Goethe-Institute or “Start Deutsch 1” of telc GmbH (The European Language Certificate) or “Grundstufe Deutsch 1” of the Austrian Language Diploma (ÖSD)(Exceptions listed in link below)</li>
           <li>2 passport pictures according to biometric specifications, not older than 6 months</li>
           <li>Visa fee</li>
+          <li>Please ensure that you have family health cover through your spouse. Until health cover has been established you might want to take a travel health insurance (Kindly refer to www.india.diplo.de/visa to find out about the travel health insurances accepted).</li>
+
         </ul>
       </div>
-      <p>
-        For further and detailed information regarding every single document, please click <a href="https://india.diplo.de/in-en/service/-/2539282">HERE</a>.
+      <p className="further-info">
+        For further and detailed information regarding every single document, please click <a className="here-btn" href="https://india.diplo.de/in-en/service/-/2539282">HERE</a>.
       </p>
-      <p>
-        PLEASE NOTE: In case a document is not set up in German or English, it has to be submitted together with a notary attested English translation.
-
-        Please note that the German Missions reserve the right to ask for additional documents or to initiate a further investigation of certificates, for which additional fees would be charged. Click here to find out about the charges for the verification.
+      <p className="additional-info">
+        <span className="please-note">PLEASE NOTE:</span> In case a document is not set up in German or English, it has to be submitted together with a notary attested English translation. Additionally, the German Missions reserve the right to ask for additional documents or to initiate a further investigation of certificates, for which additional fees would be charged. Click <a className="here-btn" href="https://india.diplo.de/in-en/service/-/1898326">HERE</a> to find out about the charges for the verification.
       </p>
-
-      <p>
-        Please ensure that you have family health cover through your spouse. Until health cover has been established you might want to take a travel health insurance (Kindly refer to www.india.diplo.de/visa to find out about the travel health insurances accepted).      </p>
     </div>
-
   );
 }
 

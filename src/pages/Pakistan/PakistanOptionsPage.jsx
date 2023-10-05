@@ -12,10 +12,9 @@ function PakistanOptionsPage() {
 
     return (
         <div className="visa-options-container">
-            <h1>Applying for a German Visa from Pakistan</h1>
+            <h1>German Visa Application from Pakistan</h1>
             <p>
-                Are you living in Pakistan and are planning to move to Germany for work, study or any other reason? Then choose
-                the the purpose of your future stay in Germany and explore your options for each purpose of stay.
+            If you are currently residing in Pakistan and contemplating a move to Germany for employment, education, or any other purpose, kindly select the specific purpose of your intended stay in Germany. This will allow you to explore the various options available for each type of stay.
             </p>
             <img className='islamabad' src={Islamabad} />
 

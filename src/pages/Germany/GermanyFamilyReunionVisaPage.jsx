@@ -31,7 +31,7 @@ function GermanyFamilyReunionVisaPage() {
 
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://service.berlin.de/dienstleistung/327471/">HERE</a></p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://service.berlin.de/dienstleistung/327471/">HERE</a></p>
         </div>
     );
 }

@@ -76,10 +76,10 @@ function EditJourneyPage(props) {
                     onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <input type="submit" value="Submit Update" />
+                <input ClassName="submit-update" type="submit" value="Submit Update" />
             </form>
 
-            <button onClick={deleteJourney}>Delete Journey</button>
+            <button className="delete-journey" onClick={deleteJourney}>Delete Journey</button>
 
         </div>
     );

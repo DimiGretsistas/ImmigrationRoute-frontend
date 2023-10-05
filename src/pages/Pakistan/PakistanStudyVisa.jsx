@@ -30,8 +30,10 @@ function PakistanStudyVisa() {
                     <li>Appointment confirmation email (only for Embassy Islamabad)</li>
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://pakistan.diplo.de/blob/2208710/4a44b499964d27c04ecb6e5770fdb824/study-visa---leaflet-data.pdf">HERE</a></p>
-            <p>PLEASE NOTE: You also have to provide all original documents (including all of your passports). They will be returned to you on the same day (except the passport you intend to travel on which stays with the Embassy during the processing time of your visa application). Please also bring a pen.</p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a href="https://pakistan.diplo.de/blob/2208710/4a44b499964d27c04ecb6e5770fdb824/study-visa---leaflet-data.pdf">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> You also have to provide all original documents (including all of your passports). They will be returned to you on the same day (except the passport you intend to travel on which stays with the Embassy during the processing time of your visa application). Please also bring a pen.
+            </p>
         </div>
     );
 }

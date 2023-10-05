@@ -27,10 +27,12 @@ function AustraliaFamilyReunionVisaPage() {
 
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://australien.diplo.de/au-en/service/01-visa/family-reunion/2073706">HERE</a></p>
-            <p>PLEASE NOTE: Please note that all documents others than in German or English must be translated into German language.
+            <p className="further-info">For more comprehensive and in-depth details about each individual document, kindly click <a className="here-btn" href="https://australien.diplo.de/au-en/service/01-visa/family-reunion/2073706">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> All documents other than those in German or English must be translated into the German language.
                 We can process only complete applications; if you hand in your application with one or several documents listed above missing, you will have to come again for a new appointment.
-                Once you have obtained your visa please check carefully that all entries are correct and in accordance with your application. Please inform the visa section immediately if there are any mistakes
+                Once you have obtained your visa, please check carefully that all entries are correct and in accordance with your application.
+                Please inform the visa section immediately if there are any mistakes.
             </p>
         </div>
     );

@@ -28,9 +28,12 @@ function SriLankaWorkVisaPage() {
                     <li>Fee: EUR 75 (to be paid in Rs., by credit card or cash) – no refund in case of rejection! Conversion into Rs. is made based on the exchange rate at the time of application</li>
                 </ul>
             </div>
-            <p>PLEASE NOTE: In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of visa. Please click <a href="https://colombo.diplo.de/blob/2352260/e7937fb26bf4e40cd41390598400e403/eu-blue-card-data.pdf">HERE</a> for futher information about it.</p>
-            <p>Additionally: Please note that the German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged.  </p>
-            <p>For further and detailed information regarding every single document, please click <a href="https://colombo.diplo.de/blob/2352268/130b3880241a607feaac1f9a0956c310/academic-data.pdf">HERE</a></p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://colombo.diplo.de/blob/2352268/130b3880241a607feaac1f9a0956c310/academic-data.pdf">HERE</a></p>
+
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of visa. Please click <a className="here-btn" href="https://colombo.diplo.de/blob/2352260/e7937fb26bf4e40cd41390598400e403/eu-blue-card-data.pdf">HERE</a> for further information about it. Additionally, please note that the German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged.
+            </p>
+
         </div>
     );
 }

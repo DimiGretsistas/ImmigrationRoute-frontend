@@ -35,9 +35,11 @@ function IndiaStudyVisaPage() {
                     <li>Travel health insurance valid on arrival in Germany to the date of enrollment at the University (mentioned in your admission letter) (approx. 3 months)</li>
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://india.diplo.de/in-en/service/-/2552164">HERE</a></p>
-            <p>Please note that the German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged.
-                Submission of the above-mentioned documents does not guarantee that a visa is granted. Submission of incomplete documentation or refusal to appear for a visa interview may result in the rejection of your application.</p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://india.diplo.de/in-en/service/-/2552164">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> The German Missions reserve the right to ask for additional documents or the verification of certificates, for which additional fees would be charged. Submission of the above-mentioned documents does not guarantee that a visa is granted. Submission of incomplete documentation or refusal to appear for a visa interview may result in the rejection of your application.
+            </p>
+
         </div>
     );
 }

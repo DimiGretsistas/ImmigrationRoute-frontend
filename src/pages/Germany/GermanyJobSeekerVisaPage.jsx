@@ -34,12 +34,13 @@ function GermanyJobSeekerVisaPage() {
                         Rental agreement and move-in confirmation from the landlord</li>
                 </ul>
             </div>
-            <p>
-                For further and detailed information regarding every single document, please click <a href="https://service.berlin.de/dienstleistung/324661/">HERE</a>.
+            <p className='further-info'>
+                For further and detailed information regarding every single document, please click <a className='here-btn' href="https://service.berlin.de/dienstleistung/324661/">HERE</a>.
             </p>
-            <p>
-                PLEASE NOTE: An extension of this residence permit is excluded if appropriate employment could not be found within the period of validity.
-                A new residence permit can only be issued for the exercise of appropriate employment or in the event of a legal entitlement.</p>
+            <p className='additional-info'>
+                <span className="please-note">PLEASE NOTE:</span> An extension of this residence permit is excluded if appropriate employment could not be found within the period of validity.
+                A new residence permit can only be issued for the exercise of appropriate employment or in the event of a legal entitlement.
+            </p>
         </div>
     );
 }

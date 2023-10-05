@@ -25,12 +25,12 @@ function AustraliaStudyVisaPage() {
                     <li>visa fee: € 75 by credit card (VISA or MasterCard) or equivalent in cash (AU$). Other payment methods (e.g. with smart watch, mobile phone) not accepted.</li>
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://australien.diplo.de/au-en/service/01-visa/student-visa/2073728">HERE</a></p>
-            <p>f you intend to study in Germany, to enrol in a German language course or conduct scientific research, you need to apply for a visa.
-
-                Australian citizens should apply for a student visa / residence permit after entering Germany at the local immigration authority. This also applies to citizens of Canada, Israel, Japan, New Zealand, Korea, the United Kingdom and the United States of America. Only in exceptional circumstances should citizens of these countries apply at the German Consulate General in Sydney before entering Germany.
-
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://australien.diplo.de/au-en/service/01-visa/student-visa/2073728">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> If you intend to study in Germany, to enroll in a German language course or conduct scientific research, you need to apply for a visa.
+                Australian citizens should apply for a student visa / residence permit after entering Germany at the local immigration authority. This also applies to citizens of Canada, Israel, Japan, New Zealand, Korea, the United Kingdom, and the United States of America. Only in exceptional circumstances should citizens of these countries apply at the German Consulate General in Sydney before entering Germany.
             </p>
+
         </div>
     );
 }

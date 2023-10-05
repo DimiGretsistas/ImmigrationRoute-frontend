@@ -11,13 +11,11 @@ function GermanyOptionsPage() {
 
     return (
         <div className="visa-options-container">
-            <h1>Applying for a Residence Permit while in Germany</h1>
+            <h1>Applying for a Residence Permit in Germany While Already in the Country</h1>
             <p>
-                Are you already in Germany and are looking to renew the duration of your stay(visa)? Then choose
-                the purpose of your stay in Germany and find out more specific information regarding the application steps and documents.
+            If you are presently in Germany and seeking to extend the duration of your stay (visa), or arrived in Germany visa-free, please select the purpose of your stay in Germany. This will enable you to access detailed information regarding the application procedures and required documents for your specific situation.
             </p>
             <img className='kiel' src={Kiel} />
-
             <div className="visa-buttons">
                 {visaOptions.map((option, index) => (
                     <Link key={index}

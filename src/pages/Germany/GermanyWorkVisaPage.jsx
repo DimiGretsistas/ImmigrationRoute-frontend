@@ -36,9 +36,11 @@ function GermanyWorkVisaPage() {
 
                 </ul>
             </div>
-            <p>PLEASE NOTE: In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of permit. Please click <a href="https://service.berlin.de/dienstleistung/324659/">HERE</a> for futher information about it  </p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://service.berlin.de/dienstleistung/329328/">HERE</a></p>
 
-            <p>For further and detailed information regarding every single document, please click <a href="https://service.berlin.de/dienstleistung/329328/">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> In case you have all of the above documents and a salary over 58.400€ or a salary over 45,552€ in a "MINT" profession, then you might be eligible for the Blue card type of permit. Please click <a href="https://service.berlin.de/dienstleistung/324659/">HERE</a> for further information about it.
+            </p>
         </div>
     );
 }

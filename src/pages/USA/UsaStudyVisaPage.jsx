@@ -29,13 +29,11 @@ function UsaStudyVisaPage() {
                     <li> Processing fee: Payable in cash only. Conversion into USD is made based on the exchange rate at the time of the application.</li>
                 </ul>
             </div>
-            <p>For further and detailed information regarding every single document, please click <a href="https://www.germany.info/blob/2435500/a861c70b330608546a3f5b198631c89c/study-data.pdf">HERE</a></p>
-            <p>Foreign students who have been accepted by a German university (where applicable with a
-                preparatory language course) or a preparatory college (Studienkolleg) can apply for a visa to
-                study in Germany. You are advised to secure your admittance or acceptance from the
-                university as early as possible.
-                During your studies, you can take up student jobs to help cover your expenses.
-                Upon completing your studies, you will have the opportunity to look for a job.</p>
+            <p className="further-info">For further and detailed information regarding every single document, please click <a className="here-btn" href="https://www.germany.info/blob/2435500/a861c70b330608546a3f5b198631c89c/study-data.pdf">HERE</a></p>
+            <p className="additional-info">
+                <span className="please-note">PLEASE NOTE:</span> Foreign students who have been accepted by a German university (where applicable with a preparatory language course) or a preparatory college (Studienkolleg) can apply for a visa to study in Germany. You are advised to secure your admittance or acceptance from the university as early as possible. During your studies, you can take up student jobs to help cover your expenses. Upon completing your studies, you will have the opportunity to look for a job.
+            </p>
+
         </div>
     );
 }

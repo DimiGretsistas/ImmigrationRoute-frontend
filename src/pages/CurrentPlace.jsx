@@ -14,7 +14,7 @@ function CurrentPlace() {
 
   return (
     <div className="currently-living-in-container">
-      <h2>When applying for a german visa, you will need to book an appointemnt at the nearest German Embassy in your jurisdiction. Please choose below the country you are currently residing in.</h2>
+      <h3>When seeking a German visa, it is essential to schedule an appointment at the closest German Embassy within your region. Please select your current country of residence from the options below.</h3>
       <img className='map' src={map} />
 
       <div className="country-buttons">

@@ -48,7 +48,7 @@ function AddTask(props) {
                     onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <button type="submit">Add Task</button>
+                <button className="add-task" type="submit">Add Task</button>
             </form>
         </div>
     );

@@ -46,13 +46,16 @@ import IndiaWorkVisaPage from "./pages/India/IndiaWorkVisaPage";
 import PakistanWorkVisaPage from "./pages/Pakistan/PakistanWorkVisaPage";
 import UsaWorkVisaPage from "./pages/USA/UsaWorkVisaPage";
 import SriLankaWorkVisaPage from "./pages/SriLanka/SriLankaWorkVisapAGE.JSX";
-// import DeleteUserProfilePage from "./pages/UserProfile/DeleteUserProfilePage";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
+        <Route
+          path="/"
+          element={<IsPrivate> <HomePage /> </IsPrivate>}
+        />
         <Route
           path="/home"
           element={<IsPrivate> <HomePage /> </IsPrivate>}
@@ -151,7 +154,7 @@ function App() {
         <Route path="/in-germany/family-reunion"
           element={<IsPrivate> <GermanyFamilyReunionVisaPage /> </IsPrivate>}
         />
-  
+
         <Route
           path="/journeys"
           element={<IsPrivate> <JourneyListPage /> </IsPrivate>}
@@ -168,10 +171,6 @@ function App() {
           path="/user/:userId/edit"
           element={<IsPrivate> <EditUserProfilePage /> </IsPrivate>}
         />
-          {/* <Route
-          path="/user/:userId/delete"
-          element={<IsPrivate> <DeleteUserProfilePage /> </IsPrivate>}
-        /> */}
         <Route
           path="/journeys/:journeyId"
           element={<IsPrivate> <JourneyDetailsPage /> </IsPrivate>}
